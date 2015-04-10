@@ -3,7 +3,7 @@ class sDateTime{
 	function singleOutputTimeZone($number){
 		$time_id = DateTimeZone::listIdentifiers();
 		date_default_timezone_set($time_id[$number]);
-		echo $time_id[$number]."<br/>";
+		//echo $time_id[$number]."<br/>";
 		return $time_id[$number];
 	}
 	function singleOutputTime(){
@@ -75,7 +75,7 @@ class sDateTime{
 		for($i=0;$i<sizeof($elem1);$i++){
 			echo '<div class="timeZone">';
 			echo $elem1[$i]."<br/>".$elem2[$i]."<br/><div class='sClock'>".$elem3[$i]."</div>";
-			echo '</div>';
+			echo "<canvas class='sCanvas'></canvas></div>";
 		}
 		echo "</div>";
 	}

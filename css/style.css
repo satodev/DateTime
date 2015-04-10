@@ -24,6 +24,13 @@ body{
 #title a:hover{
 	color:#ccc;
 }
+#status{
+	width: 100px;
+	height: 50px;
+	float:right;
+	margin-right: 10px;
+	color:#fff;
+}
 #startTimer, #stopTimer{
 	float:right;
 	display:block;
@@ -48,23 +55,29 @@ body{
 	margin-right: 5px;
 }
 #txtHint{
+	display: block;
 	border-top: 3px solid #6b2aff;
-	padding-left:10px;
 }
 .timeZone{
 	float: left;
-	max-width: 400px;
-	min-width: 14.1%;
+	width: 14.285714285714285714285714285714%;
 	text-align: center;
 	padding: 5px 0px 5px 0px;
-}
-.date:after{
-	clear:both;
-}
-.timeZone{
-	border:1px solid #333;
 }
 .timeZone:hover{
 	background-color:#333;
 	color:#fff;
+}
+.sCanvas{
+    display: block;
+	width: 100%;
+	height: 100%;
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.sCanvas:hover{
+	
 }

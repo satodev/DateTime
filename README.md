@@ -1,4 +1,4 @@
-<h1>DateTime - Project</h1>
+<h1>DateTime - Project</nh1>
 <h2>CheckList - PHP</h2>
 <h3>Model</h3> 
 <ul>
@@ -16,4 +16,9 @@
 <ul>
 	<li>[]Refresh every seconds all the clocks</li>
 	<li>[]Filter result by Country||Date||Continent</li>
+</ul>
+
+<h3>Problems</h3>
+<ul>
+	<li>[]if we spam start button we can't stop it anymore</li>
 </ul>

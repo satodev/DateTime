@@ -3,8 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>
-		DateTime - 
-		<?php date_default_timezone_set("Europe/Paris"); echo date("H:i:s");?>
+		DateTime
+		<?php 
+		include("php/dateTime.php");
+		$sdt = new sDateTime();
+		// $sdt->singleOutputTimeZone("345"); 
+		// $sdt->singleOutputTime();
+		?>
 	</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
@@ -14,17 +19,16 @@
 		<div id="title"><a href="/DateTime">DateTime</a></div>
 		<a href="#" id="startTimer"></a>
 		<a href="#" id="stopTimer"></a>
+		<div id="status"></div>
 		<br />
+		<canvas id="canvas"></canvas>
 	</div>
 	<div id="txtHint">
-		<?php include("php/dateTime.php");
-		$sdt = new sDateTime();
+		<?php
 		$sdt->VListOuputGeneral();
-		$sdt1->refreshFunction();
 		?>
 	</div>
-	<!--<script src="js/script.js"></script>-->
-	<script src="js/script2.js"></script>
+	<script src="js/dateTime.js"></script>
 </body>
 </html>
 
