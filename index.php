@@ -17,16 +17,13 @@
 <body>
 	<div id="body">
 		<div id="title"><a href="/DateTime">DateTime</a></div>
-		<a href="#" id="startTimer"></a>
-		<a href="#" id="stopTimer"></a>
+		<a href="#" id="StartStopTimer">|</a>
 		<div id="status"></div>
 		<br />
 		<canvas id="canvas"></canvas>
 	</div>
 	<div id="txtHint">
-		<?php
-		$sdt->VListOuputGeneral();
-		?>
+		<?php $sdt->VListOuputGeneral();?>
 	</div>
 	<script src="js/dateTime.js"></script>
 </body>

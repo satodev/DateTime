@@ -14,11 +14,13 @@
 </ul>
 <h3>Controllers</h3>
 <ul>
-	<li>[]Refresh every seconds all the clocks</li>
+	<li>[OK]Refresh every seconds all the clocks</li>
 	<li>[]Filter result by Country||Date||Continent</li>
 </ul>
 
 <h3>Problems</h3>
 <ul>
-	<li>[]if we spam start button we can't stop it anymore</li>
+	<li>[DONE]if we spam start button we can't stop it anymore</li>
+	<li>[]Responsive design</li>
+	<li>[]Strict MVC programming</li>
 </ul>

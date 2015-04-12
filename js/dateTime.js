@@ -1,7 +1,6 @@
 //variable
 var stat = document.getElementById("status");
-var startTimer = document.getElementById("startTimer");
-var stopTimer = document.getElementById("stopTimer");
+var toggleTimer = document.getElementById("StartStopTimer");
 var sClock = document.getElementsByClassName("sClock");
 var sCanvas = document.getElementsByClassName("sCanvas");
 var txtHint = document.getElementById("txtHint");
@@ -33,11 +32,12 @@ var s = {
 	},
 	events:{
 		eventTriggers:function(){
-			startTimer.onclick = function(){
-				s.refresh.start();
-			}
-			stopTimer.onclick=function(){
-				s.refresh.stop();
+			toggleTimer.onclick = function(){
+				if(Etrigger == false){
+					s.refresh.start();
+				}else{
+					s.refresh.stop();
+				}
 			}
 		}
 	},
@@ -72,11 +72,15 @@ var s = {
 	},
 	refresh:{
 		start:function(){
-			stat.innerHTML = "Timer ON";
+			
+			toggleTimer.innerHTML="|";
+			window.Etrigger = true;
 			startInterval = setInterval(s.timer.getPhp,1000);
 		},
 		stop:function(){
-			stat.innerHTML = "Timer OFF";
+			
+			toggleTimer.innerHTML="Ø";
+			window.Etrigger = false;
 			clearInterval(startInterval);
 		}
 	},
@@ -97,8 +101,8 @@ var s = {
 			s.canvas.drawHours(i,swidth,sheight);
 		},
 		defineCanvas:function(i){
-			sCanvas[i].height = 200;
-			sCanvas[i].width = window.innerWidth/8;
+			sCanvas[i].height = window.innerHeight/4;
+			sCanvas[i].width = window.innerWidth/6;
 		},
 		drawCircle:function(i,swidth,sheight){
 			ctCanvas.save();
