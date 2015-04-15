@@ -17,11 +17,13 @@
 <body>
 	<div id="body">
 		<div id="title"><a href="/DateTime">DateTime</a></div>
-		<a href="#" id="StartStopTimer">|</a>
-		<div id="status"></div>
+		<a href="#" title="ON|OFF Timer" id="StartStopTimer">|</a>
+		<a href="#" title="Go to top" id="goToTop">^</a>
+		<input type="text" id="searchBar" title="English | dd/mm/yyyy | hh:mm:ss" placeholder="Search...">
+		<div id="sbStatus"></div>
 		<br />
-		<canvas id="canvas"></canvas>
 	</div>
+	<hr id="sep"/>
 	<div id="txtHint">
 		<?php $sdt->VListOuputGeneral();?>
 	</div>

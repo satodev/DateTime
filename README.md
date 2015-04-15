@@ -21,6 +21,8 @@
 <h3>Problems</h3>
 <ul>
 	<li>[DONE]if we spam start button we can't stop it anymore</li>
-	<li>[]Responsive design</li>
-	<li>[]Strict MVC programming</li>
+	<li>[~DONE]Responsive design</li>
+	<li>[DONE]fixed menu bar</li>
+	<li>[DONE]GoToTop Button</li>
+	<li>[]Theme(red,green,purple)</li>
 </ul>

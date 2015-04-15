@@ -32,7 +32,7 @@ class sDateTime{
 		$time_id = DateTimeZone::listIdentifiers();
 		for($i=0; $i<sizeof($time_id);$i++){
 			date_default_timezone_set($time_id[$i]);
-			 $array[] = date("H:i:s");
+			$array[] = date("H:i:s");
 			//echo date("H:i:s")."<br />";
 		}
 		return $array;
@@ -74,7 +74,7 @@ class sDateTime{
 		$elem3 = $this->listOutputTime();
 		for($i=0;$i<sizeof($elem1);$i++){
 			echo '<div class="timeZone">';
-			echo $elem1[$i]."<br/>".$elem2[$i]."<br/><div class='sClock'>".$elem3[$i]."</div>";
+			echo '<div class="data">'.$elem1[$i]."<br/>".$elem2[$i]."<br/><div class='sClock'>".$elem3[$i]."</div></div>";
 			echo "<canvas class='sCanvas'></canvas></div>";
 		}
 		echo "</div>";
