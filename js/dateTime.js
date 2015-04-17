@@ -146,12 +146,12 @@ var s = {
 		drawtimeSpace:function(i,swidth,sheight){
 			ctCanvas.save();
 			ctCanvas.translate(swidth/2,sheight/2);
-			for(var i=0;i<=60;i++){
+			for(var i=0;i<60;i++){
 				ctCanvas.beginPath();
 				ctCanvas.rotate(Math.PI/30);
 				ctCanvas.moveTo(swidth/4,0);
 				if(i==59||i==14||i==29||i==44){
-					ctCanvas.strokeStyle="#FF0000";
+					ctCanvas.strokeStyle="#fff";
 					ctCanvas.lineTo(swidth/4.7,0);
 				}else{
 					ctCanvas.strokeStyle="#6b2aff";
@@ -177,7 +177,7 @@ var s = {
 			ctCanvas.rotate(-90*Math.PI/180);
 			ctCanvas.rotate(sectionTime[3]*Math.PI/30);
 			ctCanvas.moveTo(0,0);
-			ctCanvas.strokeStyle="#000";
+			ctCanvas.strokeStyle="#fff";
 			ctCanvas.lineWidth = 1;
 			ctCanvas.lineTo(swidth/5,0);
 			ctCanvas.stroke();
@@ -189,7 +189,7 @@ var s = {
 			ctCanvas.rotate(-90*Math.PI/180);
 			ctCanvas.rotate(sectionTime[2]*Math.PI/30);
 			ctCanvas.moveTo(0,0);
-			ctCanvas.strokeStyle="#000";
+			ctCanvas.strokeStyle="#fff";
 			ctCanvas.lineWidth = 2;
 			ctCanvas.lineTo(swidth/6,0);
 			ctCanvas.stroke();
@@ -202,7 +202,7 @@ var s = {
 			ctCanvas.rotate(sectionTime[1]*Math.PI/6);
 			ctCanvas.moveTo(0,0);
 			ctCanvas.lineWidth = 2;
-			ctCanvas.strokeStyle="#000";
+			ctCanvas.strokeStyle="#fff";
 			ctCanvas.lineTo(swidth/8,0);
 			ctCanvas.stroke();
 			ctCanvas.restore();

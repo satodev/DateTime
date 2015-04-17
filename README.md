@@ -10,12 +10,12 @@
 <ul>
 	<li>[OK]Entire set of items in one row</li>
 	<li>[OK]Putting item in an Array</li>
-	<li>[]Organise items by date||Time||TimeZone</li>
+	<li>[DONE-insearchBar]Organise items by date||Time||TimeZone</li>
 </ul>
 <h3>Controllers</h3>
 <ul>
 	<li>[OK]Refresh every seconds all the clocks</li>
-	<li>[]Filter result by Country||Date||Continent</li>
+	<li>[DONE]Filter result by Country||Date||Continent</li>
 </ul>
 
 <h3>Problems</h3>

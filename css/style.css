@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 html{
-	background-color: #fff;
+	background-color: rgba(33,33,33,1);
 	background-image: url("../img/bg2.jpg");
 	background-repeat:no-repeat;
 	background-attachment: fixed;
@@ -140,6 +140,9 @@ body{
 }
 .timeZone:hover{
 	opacity:1;
+}
+.timeZone:hover .data{
+	background-color:#333;
 }
 .data{
 	background-color:none;
