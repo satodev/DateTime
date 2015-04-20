@@ -100,7 +100,7 @@ var s = {
 			var tz = document.getElementsByClassName("timeZone");
 			try{
 				for(var i=0; i<tz.length;i++){
-					var reg = new RegExp(value,"g");
+					var reg = new RegExp(value,"gi");
 					var res = reg.exec(tz[i].childNodes[0].textContent);
 					tz[i].style.display = "none";
 					sbstatus.innerHTML="";
